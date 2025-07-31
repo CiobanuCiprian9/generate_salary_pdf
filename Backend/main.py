@@ -6,5 +6,4 @@ from Controllers import SendExcelController
 from app import myapp
 
 if __name__ == "__main__":
-    print(myapp.url_map)
     myapp.run(port=8000)

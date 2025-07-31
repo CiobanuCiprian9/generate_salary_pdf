@@ -1,5 +1,4 @@
 import smtplib
-import time
 from email.message import EmailMessage
 from Services.zip.arhiveService import add_to_arhive
 
