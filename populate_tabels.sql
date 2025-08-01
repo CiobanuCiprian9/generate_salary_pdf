@@ -85,3 +85,12 @@ delete from "Employees";
 delete from "Attendance";
 delete from "Bonus";
 delete from "Salaries";
+
+update "Employees" set email='paul.azoitei@endava.com' where id_employee='A102';
+update "Employees" set email='matei.manea@endava.com' where id_employee='A101';
+update "Employees" set email='maria.secrieru@endava.com@endava.com' where id_employee='A103';
+update "Employees" set email='victor.rosca@endava.com' where id_employee='A104';
+update "Employees" set email='alina.brinza@endava.com' where id_employee='M101';
+update "Employees" set first_name='Ramfu',last_name='Alina' where id_employee='M101';
+update "Employees" set first_name='Rosca',last_name='Victor' where id_employee='A104';
+update "Employees" set first_name='Secrieru',last_name='Elisa' where id_employee='A103';

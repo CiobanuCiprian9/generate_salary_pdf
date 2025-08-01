@@ -13,12 +13,13 @@ def sendExcel():
 
     EXCEL_FOLDER = "reports/excel_reports"
 
-    smtp_server = "sandbox.smtp.mailtrap.io"
-    smtp_port = 25
+    smtp_server = "smtp.mail.yahoo.com"
+    smtp_port = 587
     smtp_user = os.environ.get("MAILTRAP_USER")
     smtp_pass = os.environ.get("MAILTRAP_PASSWORD")
 
     with smtplib.SMTP(smtp_server, smtp_port) as smtp:
+        smtp.starttls()
         smtp.login(smtp_user, smtp_pass)
 
         for mgr in managers:

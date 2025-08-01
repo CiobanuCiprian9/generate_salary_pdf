@@ -1,8 +1,7 @@
 \# Employee Payroll System
 
 
-
-A Python Flask application that generates salary slips (PDF) and monthly reports (Excel) for employees, sends them via email and archives the files into a single ZIP.
+This application automates the generation and distribution of payroll documents for employees and managers. It generates individual *PDF payslips* for employees, manager-specific Excel reports summarizing team salary data, and archives both formats into a single downloadable ZIP file. The system also emails the appropriate files to recipients using *Mailtrap* for safe testing.
 
 
 
@@ -29,13 +28,13 @@ A Python Flask application that generates salary slips (PDF) and monthly reports
 
 
 
-GET /createAggregatedEmployeeData - creates the Excel
+POST /createAggregatedEmployeeData - creates the Excel
 
-GET /createPdfForEmployees - creates the PDF
+POST /createPdfForEmployees - creates the PDF
 
-GET /sendAggregatedEmployeeData - sends the Excel to manager via email
+POST /sendAggregatedEmployeeData - sends the Excel to manager via email
 
-GET /sendPdfToEmployees - send the PDF to employee via email
+POST /sendPdfToEmployees - send the PDF to employee via email
 
 
 
